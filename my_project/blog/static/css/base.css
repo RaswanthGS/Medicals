@@ -4,12 +4,9 @@
     box-sizing: border-box;
    
 }
-
 html{
     font-family: 'Catamaran', sans-serif;
 }
-
-
 body{
     width:100%;
     min-height: 100vh;
