@@ -1,3 +1,15 @@
+@media (max-width: 790px) {
+    .contact-form{
+            margin-left: 10%;
+            margin-right: 10%;
+    }
+}
+@media (min-width: 790px) {
+    .contact-form{
+            margin-left: 30%;
+            margin-right: 30%;
+    }
+}
 *{
     margin: 0;
     padding:0;
@@ -11,10 +23,6 @@ body{
 }
 #nav{
     background-color: darkblue;
-}
-.contact-form{
-    margin-left: 30%;
-    margin-right: 30%;
 }
 .submit{
     color: white;
