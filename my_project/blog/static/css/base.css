@@ -12,3 +12,15 @@ body{
 #nav{
     background-color: darkblue;
 }
+.contact-form{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.submit{
+    color: white;
+    border: grey;
+    border-radius: 40px;
+    background-color: rgb(33, 33, 33);
+    margin-left: 12%;
+    width: 35%;
+}
