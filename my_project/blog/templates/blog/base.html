@@ -176,6 +176,20 @@
 
         </div>
 
+        <div class="container">
+            <div class="container" id="contactus">
+                <h2 class="py-4" style="color: white;"><b>CONTACT US</b></h2>
+                <div class="row" style="text-align: center;">
+                    <form class="contact-form" action="" method="POST">
+                        <table>
+                            {{ forms }}
+                        </table>
+                        {% csrf_token %}
+                        <button type="submit" value="save" class="submit my-2"><div class="my-2">Submit</div></button>
+                    </form>
+                </div>
+            </div>
+
 
 
 
@@ -226,7 +240,7 @@
             type:'image',
             delegate:'a',
             gallery: {
-                enable:true
+                enabled:true
             }
         });
     });
@@ -242,20 +256,8 @@
 
 
 </body>
-<footer class="container-fluid col-sm bg-info" style=" text-align: center;" id="footer">
-    <div class="container">
-    <div class="container" id="contactus">
-        <h2 class="py-4" style="color: white;"><b>CONTACT US</b></h2>
-        <div class="row" style="text-align: center;">
-            <form class="contact-form" action="" method="POST">
-                <table>
-                    {{ forms }}
-                </table>
-                {% csrf_token %}
-                <button type="submit" value="save" class="submit my-2"><div class="my-2">Submit</div></button>
-            </form>
-        </div>
-    </div>
+<footer class="container-fluid col-sm bg-dark" style=" text-align: center;" id="footer">
+  
 
     <div class="container" style="color: white;">
         <div class="row py-4">
