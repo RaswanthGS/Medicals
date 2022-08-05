@@ -9,3 +9,6 @@ body{
     min-height: 100vh;
     background-color:azure;
 }
+#nav{
+    background-color: darkblue;
+}
