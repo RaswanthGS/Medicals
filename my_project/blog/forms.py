@@ -9,8 +9,8 @@ class PostForm(ModelForm):
         model = Medicals
         fields = '__all__'
         widgets = {
-            'name' : forms.TextInput(attrs = {'class':'form-group form-control', 'style':'border: 2px solid black; width:120%',}),
-            'number' : forms.NumberInput(attrs = {'class':'form-group form-control', 'style':'border: 2px solid black; width:120%'}),
-            'email_id' : forms.EmailInput(attrs = {'class':'form-group form-control', 'style':'border: 2px solid black; width:120%'}),
-            'message' : forms.Textarea(attrs = {'class':'form-group form-control', 'rows':3, 'style':'border: 2px solid black; width:120%'}),
+            'Name' : forms.TextInput(attrs = {'class':'form-group form-control', 'style':'margin-left:2%',}),
+            'Number' : forms.NumberInput(attrs = {'class':'form-group form-control', 'style':'margin-left:2%'}),
+            'Email_id' : forms.EmailInput(attrs = {'class':'form-group form-control', 'style':'margin-left:2%'}),
+            'Message' : forms.Textarea(attrs = {'class':'form-group form-control', 'rows':6, 'style':'margin-left:2%'}),
         }
