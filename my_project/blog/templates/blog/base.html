@@ -134,7 +134,12 @@
     <div class="container">
         <div class="row">
 
-            <form class action="" method="POST"></form>
+            <form class="contact-form" action="" method="POST">
+                <table>
+                    {{ forms }}
+                </table>
+                {% csrf_token %}
+            </form>
 
         </div>
     </div>
