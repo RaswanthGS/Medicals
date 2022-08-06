@@ -181,15 +181,33 @@
                 <h2 class="py-4"><b>CONTACT US</b></h2>
                 <div class="row" style="text-align: center;">
                     <form class="contact-form" action="" method="POST">
-                        <table>
-                            {{ forms }}
-                        </table>
                         {% csrf_token %}
-                        <button type="submit" value="save" class="submit my-2"><div class="my-2">Submit</div></button>
+                        <input type="text" class="form-group form-control" name="Name" id="Name" placeholder="Name">
+                        <input type="text" class="form-group form-control" name="Number"  id="Number" placeholder="Mobile Number">
+                        <input type="text" class="form-group form-control" name="Email" id="Email" placeholder="Email ID">
+                        <input type="text" class="form-group form-control" name="Message" id="Message" placeholder="Message">
+                        <button type="submit" onclick="gotowhatsapp()" class="submit my-2"><div class="my-2">Submit</div></button>
                     </form>
                 </div>
             </div>
         </div>
+        <script>
+            function gotowhatsapp() {
+                
+                var name = document.getElementById("Name").value;
+                var email = document.getElementById("Email").value;
+                var phone = document.getElementById("Number").value;
+                var message = document.getElementById("Message").value;
+            
+                var url = "https://wa.me/919443325015?text=" 
+                + "Name: " + name + "%0a"
+                + "Email: " + email + "%0a"
+                + "Phone: " + phone + "%0a"
+                + "Message: " + message; 
+            
+                window.open(url, '_blank').focus();
+            }
+        </script>
 
 
 

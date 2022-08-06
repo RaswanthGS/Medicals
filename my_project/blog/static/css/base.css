@@ -1,13 +1,13 @@
 @media (max-width: 790px) {
     .contact-form{
-            margin-left: 10%;
-            margin-right: 10%;
+            margin-left: 25%;
+            margin-right: 25%;
     }
 }
 @media (min-width: 790px) {
     .contact-form{
-            margin-left: 30%;
-            margin-right: 30%;
+            margin-left: 40%;
+            margin-right: 40%;
     }
 }
 *{
