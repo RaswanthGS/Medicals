@@ -3,11 +3,17 @@
             margin-left: 20%;
             margin-right: 20%;
     }
+    .footer-list{
+        border-bottom: 1px solid white;
+    }
 }
 @media (min-width: 768px) {
     .order-form{
             margin-left: 35%;
             margin-right: 35%;
+    }
+    .footer-list{
+        border-right: 1px solid white;
     }
 }
 *{
