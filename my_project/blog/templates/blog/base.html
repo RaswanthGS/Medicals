@@ -209,12 +209,12 @@
             <div class="container" id="contactus">
                 <h2 class="py-4"><b>ORDER</b></h2>
                 <div class="row" style="text-align: center;">
-                    <form class="contact-form" action="" method="POST">
+                    <form class="order-form" action="" method="POST">
                         {% csrf_token %}
-                        <input type="text" class="form-group form-control" name="Name" id="Name" placeholder="Name">
-                        <input type="text" class="form-group form-control" name="Number"  id="Number" placeholder="Mobile Number">
-                        <input type="text" class="form-group form-control" name="Email" id="Email" placeholder="Email ID">
-                        <input type="text" class="form-group form-control" name="Address" id="Address" placeholder="Address">
+                        <input type="text" style="width: 350px;" class="form-group form-control" name="Name" id="Name" placeholder="Name">
+                        <input type="text" style="width: 350px;" class="form-group form-control" name="Number"  id="Number" placeholder="Mobile Number">
+                        <input type="text" style="width: 350px;" class="form-group form-control" name="Email" id="Email" placeholder="Email ID">
+                        <input type="text" style="width: 350px;" class="form-group form-control" name="Address" id="Address" placeholder="Address">
                         <button type="submit" onclick="gotowhatsapp()" class="submit my-2"><div class="my-2">Submit</div></button>
                     </form>
                 </div>
@@ -307,26 +307,22 @@
   
 
     <div class="container" style="color: white;">
-        <div class="row py-4">
-            <div class="col-md-3 mb-1">
-                <h6><a href="#" style="color: white; cursor:pointer;">ABOUT US</a></h6>
+        <div class="row py-3">
+            <div class="footer-list col-md-6 col-sm-12" style="padding-top: 10%; padding-bottom: 5%;">
+                <h6 class="mb-3"><a href="#" style="color: white; cursor:pointer;">ABOUT US</a></h6>
+                <h6 class="mb-3"><a href="#" style="color: white; cursor:pointer;">PRODUCTS</a></h6>
+                <h6 class="mb-3"><a href="#" style="color: white; cursor:pointer;">ORDER</a></h6>
+                <h6 class="mb-3"><a href="#" style="color: white; cursor:pointer;">CONTACT US</a></h6>
             </div>
-            <div class="col-md-3 mb-1">
-                <h6><a href="#" style="color: white; cursor:pointer;">PRODUCTS</a></h6>
-            </div>
-            <div class="col-md-3 mb-1">
-                <h6><a href="#" style="color: white; cursor:pointer;">ORDER</a></h6>
-            </div>
-            <div class="col-md-3 mb-1">
-                <h6><a href="#" style="color: white; cursor:pointer;">CONTACT US</a></h6>
-            </div>
-        </div>
-        <div class="container">
-            <div class="py-4" style="text-align: center; margin-left: 12%; margin-right: 12%; border-top: 1px solid white;">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit fugit, quasi, earum voluptas numquam repudiandae sed, laboriosam dolorem praesentium mollitia doloribus laudantium dolor esse culpa! Labore atque consequatur veritatis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt tempora delectus vitae! Aliquam consectetur ut sit omnis illum quibusdam ipsum ducimus odio ad voluptatibus facilis tempora, voluptas vel at.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius odit aliquid soluta omnis dolor ad sequi deleniti debitis, labore, delectus ducimus ex accusamus reprehenderit quod quibusdam rem sint veritatis suscipit.
-                </p>
+            <div class="col-md-6 col-sm-12 mt-5">
+                <h2><b>Contact Us</b></h2>
+                <form class="contact-form" method="POST" action="">
+                    <table>
+                        {{ forms }}
+                    </table>
+                    {% csrf_token %}
+                    <button type="submit" value="submit" class="submit1 my-2"><div class="my-2">Submit</div></button>
+                </form>
             </div>
         </div>
         <div class="icon pb-3">
