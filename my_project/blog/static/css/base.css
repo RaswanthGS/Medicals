@@ -1,13 +1,13 @@
-@media (max-width: 790px) {
-    .contact-form{
-            margin-left: 25%;
-            margin-right: 25%;
+@media (max-width: 768px) {
+    .order-form{
+            margin-left: 20%;
+            margin-right: 20%;
     }
 }
-@media (min-width: 790px) {
-    .contact-form{
-            margin-left: 40%;
-            margin-right: 40%;
+@media (min-width: 768px) {
+    .order-form{
+            margin-left: 35%;
+            margin-right: 35%;
     }
 }
 *{
@@ -30,5 +30,15 @@ body{
     border-radius: 40px;
     background-color: rgb(33, 33, 33);
     margin-left: 12%;
-    width: 35%;
+    width: 100px;
+}
+.submit1{
+    color: rgb(0, 0, 0);
+    border: grey;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+}
+.contact-form {
+    margin-left: 6%;
 }
