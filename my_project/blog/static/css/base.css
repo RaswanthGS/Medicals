@@ -20,9 +20,17 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color:azure;
+   
 }
 #nav{
     background-color: darkblue;
+    padding:8px;
+}
+#mark{
+   
+    height:20px;
+    background-color: rgb(218, 217, 217);
+    margin-left: 10%;
 }
 .submit{
     color: white;
