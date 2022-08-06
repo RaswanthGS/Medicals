@@ -180,13 +180,13 @@
             <div class="container" id="contactus">
                 <h2 class="py-4"><b>CONTACT US</b></h2>
                 <div class="row" style="text-align: center;">
-                    <form class="contact-form" action="/" method="POST">
+                    <form class="contact-form" action="" method="POST">
                         {% csrf_token %}
                         <input type="text" class="form-group form-control" name="Name" placeholder="Name">
                         <input type="text" class="form-group form-control" name="Number"  placeholder="Mobile Number">
                         <input type="text" class="form-group form-control" name="Email"  placeholder="Email ID">
                         <input type="text" class="form-group form-control" name="Message"  placeholder="Message">
-                        <button type="submit" value="save" onclick="gotowhatsapp()" class="submit my-2"><div class="my-2">Submit</div></button>
+                        <button type="submit" onclick="gotowhatsapp()" class="submit my-2"><div class="my-2">Submit</div></button>
                     </form>
                 </div>
             </div>
