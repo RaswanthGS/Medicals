@@ -180,17 +180,36 @@
             <div class="container" id="contactus">
                 <h2 class="py-4"><b>CONTACT US</b></h2>
                 <div class="row" style="text-align: center;">
-                    <form class="contact-form" action="" method="POST">
-                        <input type="text" class="form-group form-control" name="Name" >
-                        <input type="text" class="form-group form-control" name="Name" >
-                        <input type="text" class="form-group form-control" name="Name" >
-                        <input type="text" class="form-group form-control" name="Name" >
+                    <form class="contact-form" action="/" method="POST">
                         {% csrf_token %}
+                        <input type="text" class="form-group form-control" name="Name" placeholder="Name">
+                        <input type="text" class="form-group form-control" name="Number"  placeholder="Mobile Number">
+                        <input type="text" class="form-group form-control" name="Email"  placeholder="Email ID">
+                        <input type="text" class="form-group form-control" name="Message"  placeholder="Message">
                         <button type="submit" value="save" class="submit my-2"><div class="my-2">Submit</div></button>
                     </form>
                 </div>
             </div>
         </div>
+        <script>
+            function gotowhatsapp() {
+                
+                var name = document.getElementById("name1").value;
+                var email = document.getElementById("email1").value;
+                var phone = document.getElementById("mobile1").value;
+                var report = document.getElementById("report1").value;
+                var message = document.getElementById("message1").value;
+            
+                var url = "https://wa.me/919965656455?text=" 
+                + "Name: " + name + "%0a"
+                + "Email: " + email + "%0a"
+                + "Phone: " + phone + "%0a"
+                + "Report: " + report  + "%0a"
+                + "Message: " + message; 
+            
+                window.open(url, '_blank').focus();
+            }
+        </script>
 
 
 
