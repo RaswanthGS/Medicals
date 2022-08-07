@@ -31,22 +31,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto  ">
                 <li class="nav-item active ">
-                  <a class="nav-link text-white" href="#"><h5>Brands</h5></a>
+                  <a class="nav-link text-white" href="#brands"><h5>Brands</h5></a>
                 </li>
                 <li class="nav-item active">
-              <a class="nav-link text-white" href="#"><h5>About</h5></a>
+              <a class="nav-link text-white" href="#about"><h5>About</h5></a>
              </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-white" href="#"><h5>Gallery</h5></a>
+                  <a class="nav-link text-white" href="#gallery"><h5>Gallery</h5></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-white" href="#"><h5>Order</h5></a>
+                  <a class="nav-link text-white" href="#order"><h5>Order</h5></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-white" href="#"><h5>Location</h5></a>
+                  <a class="nav-link text-white" href="#location"><h5>Location</h5></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#query"><h5>Query</h5></a>
+                  </li>
                 <li class="nav-item active mt-2 ml-2">
-                    <a href="tel:+91 9443325015"><i style="color: white;" class="fa fa-solid fa-phone"></i></a>
+                    <a href="tel:+91 9443325015" ><i style="color: white;" class="fa fa-solid fa-phone"></i></a>
                 </li>
               </ul>
             </div>
@@ -56,12 +59,14 @@
 
 <main>
     <div class="container-fluid col-sm-12 bg-white" style="padding-top:80px; padding-bottom:5px;">
-        <marquee width="80%" direction="left" id="mark"><b>
+        <marquee width="90%" direction="left" id="mark"><b>
             This is a sample scrolling text that has scrolls in the upper direction.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quaerat excepturi explicabo quae blanditiis. Doloribus deserunt repellendus ex at impedit maiores aperiam error praesentium! Odio ratione neque eum fugit voluptas.
         </b></marquee>
     </div>
 
-    <div class="container col-sm bg-secondary " >
+
+    
+    <div class="container col-sm  " >
         <div id="carouselExampleCaptions" style="padding:0px;width:90%;margin-left:5% ;" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -100,11 +105,11 @@
           </div>
     </div>
     
-    <div class="container-fluid my-5" style="text-align: center; background-color: azure;  ">
-        <h2 class="my-3"><b>Top Brands</b></h2>
+    <div class="container-fluid my-0 bg-white" id="brands" style="text-align: center; background-color: azure;  padding:20px;">
+        <h2 ><b>Top Brands</b></h2>
     </div>  
 
-    <div class="container-fluid mt-5 bg-white" style="padding:70px;" id="brands">
+    <div class="container-fluid mt-0 " style="padding:80px;" id="brands">
             
             <div class="row ">
                 <div class="col-sm-4">
@@ -156,11 +161,12 @@
 
 
 
+        <div class="container-fluid bg-white" id="about" style="text-align: center; background-color: azure; padding:20px;  ">
+            <h2 ><b>About us</b></h2>
+        </div> 
 
-
-        <div class="container-fluid">
-            <div class="container my-5" style="text-align: center; background-color: azure; border: 5px solid darkblue; border-left: 15px solid darkblue; border-right: 15px solid darkblue; ">
-                <h2 class="my-3"><b>About Us</b></h2>
+        <div class="container-fluid " style="padding:40px;">
+            <div class="container " style="text-align: center; background-color: azure; border: 5px solid darkblue; border-left: 15px solid darkblue; border-right: 15px solid darkblue; ">
                 <div class="my-4" style="margin-left: 10%; margin-right: 10%;">
                       <div class="container my-5" style="width: 18rem;">
                         <img src="static/images/med.jpg" class="card-img-top" alt="...">                       
@@ -169,10 +175,12 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid bg-white" id="gallery" style="text-align: center; background-color: azure; padding: 20px; ">
+            <h2><b>Gallery</b></h2>
+        </div> 
 
-        <div class="container">
-            <div class="container my-5" style="text-align: center; background-color: azure;  ">
-                <h2 class="my-3"><b>Gallery</b></h2>
+        <div class="container-fluid " style="padding:70px;">
+            <div class="container " style="text-align: center; background-color: azure;  ">
             </div> 
             <div class="row no-gutters gallerys">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
@@ -208,10 +216,12 @@
             </div>
 
         </div>
+        <div class="container-fluid bg-white" id="order" style="text-align: center; background-color: azure; padding: 20px;; ">
+            <h2 ><b>Order</b></h2>
+        </div> 
 
-        <div class="container" style="text-align: center;">
+        <div class="container-fluid bg-info" style="text-align: center; padding: 90px;">
             <div class="container" id="contactus">
-                <h2 class="py-4"><b>ORDER</b></h2>
                 <div class="row" style="text-align: center;">
                     <form class="order-form" action="" method="POST">
                         {% csrf_token %}
@@ -245,11 +255,12 @@
 
 
 
-
+<div class="container-fluid bg-white" id="location" style="text-align: center; background-color: azure;padding: 20px;  ">
+    <h2 ><b>Address & location</b></h2>
+</div> 
     
-        <div class="container-fluid my-3" id="address">
+        <div class="container-fluid  " id="address" style="padding: 60px;">
             <div class="container mt-5" style="text-align: center;">
-                <h2><b>Address & Location</b></h2>
                 <div class="row">
                     <div class="col-md-4">
                         <h5 class="mt-4">4/1 Nehru Street,<br> Opposite to Dr.Sivakani Hospital,<br> Udumalaipettai,<br>PINCODE: 642126</h5>
@@ -296,7 +307,7 @@
 <footer class="container-fluid col-sm bg-dark" style=" text-align: center;" id="footer">
   
 
-    <div class="container" style="color: white;">
+    <div class="container" id="query" style="color: white;">
         <div class="row py-3">
             <div class="footer-list col-md-6 col-sm-12" style="padding-top: 10%; padding-bottom: 5%;">
                 <h6 class="mb-3"><a href="#" style="color: white; cursor:pointer;">ABOUT US</a></h6>
@@ -305,7 +316,7 @@
                 <h6 class="mb-3"><a href="#" style="color: white; cursor:pointer;">CONTACT US</a></h6>
             </div>
             <div class="col-md-6 col-sm-12 mt-5">
-                <h2><b>Contact Us</b></h2>
+                <h2><b>Customer Query</b></h2>
                 <form class="contact-form" method="POST" action="">
                     <table>
                         {{ forms }}

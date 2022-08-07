@@ -25,7 +25,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color:azure;
+    background-color:rgb(221, 232, 232);
    
 }
 #nav{
@@ -35,8 +35,8 @@ body{
 #mark{
    
     height:20px;
-    background-color: rgb(218, 217, 217);
-    margin-left: 10%;
+    background-color: white;
+    margin-left: 5%;
 }
  .gallerys img:hover{
     transform:scale(1.1) ;
