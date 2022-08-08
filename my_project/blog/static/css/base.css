@@ -7,9 +7,6 @@
     .footer-list{
         border-bottom: 1px solid white;
     }
-    .image{
-        width: 40%;
-    }
 }
 @media (min-width: 768px) {
     .order-form{
@@ -17,9 +14,6 @@
     }
     .footer-list{
         border-right: 1px solid white;
-    }
-    .image{
-        width: 60%;
     }
 }
 *{
