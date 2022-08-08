@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef78bd09eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lightbox.min.css' %}">
+    <script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
+    <title>Radha Medicals</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top col-sm mt-0" id="nav">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="static/images/pharm.png" style="padding-bottom: 6px;width: 13%; margin-right:1%; ">
+                    <a class="text-white " href="{% url 'main' %}" style="font-size:26px; text-decoration: none;"><b>RADHA MEDICALS</b></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto  ">
+                <li class="nav-item active ">
+                  <a class="nav-link text-white" href="#brands"><h5>Brands</h5></a>
+                </li>
+                <li class="nav-item active">
+              <a class="nav-link text-white" href="#about"><h5>About</h5></a>
+             </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#gallery"><h5>Gallery</h5></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#order"><h5>Order</h5></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#location"><h5>Location</h5></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#query"><h5>Query</h5></a>
+                  </li>
+                <li class="nav-item active mt-2 ml-2">
+                    <a href="tel:+91 9443325015" ><i style="color: white;" class="fa fa-solid fa-phone"></i></a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+    </header>
+
+<main>
+    <div class="container-fluid col-sm-12 bg-white" style="padding-top:80px; padding-bottom:5px;">
+        <marquee width="90%" direction="left" id="mark"><b>
+            This is a sample scrolling text that has scrolls in the upper direction.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quaerat excepturi explicabo quae blanditiis. Doloribus deserunt repellendus ex at impedit maiores aperiam error praesentium! Odio ratione neque eum fugit voluptas.
+        </b></marquee>
+    </div>
+
+
+    
+    <div class="container col-sm  " >
+        <div id="carouselExampleCaptions" style="padding:0px;width:90%;margin-left:5% ;" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="static/images/h1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:black;">Radha Medicals</h3>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/h2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 style="color:black;">Radha Medicals</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/h3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+    </div>
+    
+    <div class="container-fluid my-0 bg-white" id="brands" style="text-align: center; background-color: azure;  padding:20px;">
+        <h2 ><b>Top Brands</b></h2>
+    </div>  
+
+    <div class="container my-4" style="text-align: center;"  id="brands">
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="static/images/b1.jpg" class="image" alt="...">                        
+                </div>
+                <div class="col-sm-4">
+                    <img src="static/images/b2.jpg" class="image" alt="...">                 
+                </div>
+                <div class="col-sm-4">                        
+                    <img src="static/images/b3.jpg" class="image" alt="...">                       
+                </div>
+                <div class="col-sm-4">
+                    <img src="static/images/b4.jpg" class="image" alt="...">                        
+                </div>
+                <div class="col-sm-4">
+                
+                    <img src="static/images/b5.jpg" class="image" alt="...">                 
+                </div>
+                <div class="col-sm-4">
+                
+                    <img src="static/images/b6.jpg" class="image" alt="...">                       
+                </div>
+            </div>
+            
+
+        </div>
+
+       
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container-fluid bg-white" id="about" style="text-align: center; background-color: azure; padding:20px;  ">
+            <h2 ><b>About us</b></h2>
+        </div> 
+
+        <div class="container-fluid " style="padding:40px;">
+            <div class="container " style="text-align: center; background-color: azure; border: 5px solid darkblue; border-left: 15px solid darkblue; border-right: 15px solid darkblue; ">
+                <div class="my-4" style="margin-left: 10%; margin-right: 10%;">
+                    <img src="static/images/med.jpg" width="100%" class="card-img-top" alt="...">
+                    <h7 style="font-size: 22px;">Medicines and daily needs in just one go. No more running from one chemist store to another when in need of medicines! We Radha Medicals bring to you a medicine store at your doorstep. We are one of the most trusted online stores, with years of experience in dispensing quality medicines and health care. We help you to look after your own health effortlessly as well as take care of loved ones. You can ask for them from any corner of the country.</h7>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-white" id="gallery" style="text-align: center; background-color: azure; padding: 20px; ">
+            <h2><b>Gallery</b></h2>
+        </div> 
+
+        <div class="container-fluid " style="padding:70px;">
+            <div class="container " style="text-align: center; background-color: azure;  ">
+            </div> 
+            <div class="row no-gutters gallerys">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <a href="static/images/g1.jpg" data-lightbox="gallerys">
+                        <img src="static/images/g1.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <a href="static/images/g6.jpg" data-lightbox="gallerys">
+                        <img src="static/images/g6.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <a href="static/images/g3.jpg" data-lightbox="gallerys">
+                        <img src="static/images/g3.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <a href="static/images/g4.jpg" data-lightbox="gallerys">
+                        <img src="static/images/g4.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <a href="static/images/g2.jpg" data-lightbox="gallerys">
+                        <img src="static/images/g2.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <a href="static/images/g5.jpg" data-lightbox="gallerys">
+                        <img src="static/images/g5.jpg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid bg-white" id="order" style="text-align: center; background-color: azure; padding: 20px;; ">
+            <h2 ><b>Order</b></h2>
+        </div> 
+
+        <div class="container-fluid bg-info" style="text-align: center; padding-top: 60px;">
+            <div class="container" id="contactus">
+                <div class="row" style="text-align: center;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <form class="order-form" action="" method="POST">
+                            {% csrf_token %}
+                            <input type="text" class="form-group form-control order-form" name="Name" id="Name" placeholder="Name">
+                            <input type="text" class="form-group form-control order-form" name="Number"  id="Number" placeholder="Mobile Number">
+                            <input type="text" class="form-group form-control order-form" name="Email" id="Email" placeholder="Email ID">
+                            <input type="text" class="form-group form-control order-form" name="Address" id="Address" placeholder="Address">
+                            <button type="submit" onclick="gotowhatsapp()" class="submit my-2"><div class="my-2">Submit</div></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function gotowhatsapp() {
+                
+                var name = document.getElementById("Name").value;
+                var email = document.getElementById("Email").value;
+                var phone = document.getElementById("Number").value;
+                var address = document.getElementById("Address").value;
+            
+                var url = "https://wa.me/916383284569?text=" 
+                + "Name: " + name + "%0a"
+                + "Email: " + email + "%0a"
+                + "Phone: " + phone + "%0a"
+                + "Address: " + address; 
+            
+                window.open(url, '_blank').focus();
+            }
+        </script>
+
+
+
+
+<div class="container-fluid bg-white" id="location" style="text-align: center; background-color: azure;padding: 20px;  ">
+    <h2 ><b>Address & location</b></h2>
+</div> 
+    
+        <div class="container-fluid  " id="address" style="padding: 60px;">
+            <div class="container mt-5" style="text-align: center;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="mt-4">4/1 Nehru Street,<br> Opposite to Dr.Sivakani Hospital,<br> Udumalaipettai,<br>PINCODE: 642126</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.9733622617055!2d77.24327495712788!3d10.581255500000019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9cc53324caf99%3A0x947b9eb38224429a!2sRadha%20Medical%20Agencies!5e0!3m2!1sen!2sin!4v1659681555190!5m2!1sen!2sin" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer class="container-fluid col-sm bg-dark" style=" text-align: center;" id="footer">
+  
+
+    <div class="container" id="query" style="color: white;">
+        <div class="row py-3 mx-5">
+            <div class="footer-list col-md-6 col-sm-12" style="padding-top: 10%; padding-bottom: 5%;">
+                <h6 class="mb-3"><a href="#about" style="color: white; cursor:pointer;">ABOUT US</a></h6>
+                <h6 class="mb-3"><a href="#brands" style="color: white; cursor:pointer;">PRODUCTS</a></h6>
+                <h6 class="mb-3"><a href="#order" style="color: white; cursor:pointer;">ORDER</a></h6>
+                <h6 class="mb-3"><a href="#location" style="color: white; cursor:pointer;">LOCATION</a></h6>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-5">
+                <h2><b>Customer Query</b></h2>
+                <form class="contact-form" method="POST" action="">
+                    <table>
+                        {{ forms }}
+                    </table>
+                    {% csrf_token %}
+                    <button type="submit" value="submit" class="submit1 my-2"><div class="my-2">Submit</div></button>
+                </form>
+            </div>
+        </div>
+        <div class="icon pb-3">
+            <a href="tel:+91 9443325015"><i style="padding-right: 1%; color: white;" class="fa fa-solid fa-phone"></i></a>
+            <a href="https://wa.me/+919443325015"><i style=" padding-right: 1%; color: white;" class="fa fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:raswanth47@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 2 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>
