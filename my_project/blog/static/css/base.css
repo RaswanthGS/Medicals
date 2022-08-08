@@ -1,19 +1,23 @@
 @media (max-width: 768px) {
-    .order-form{
-            margin-left: 20%;
-            margin-right: 20%;
-    }
     .footer-list{
         border-bottom: 1px solid white;
     }
 }
 @media (min-width: 768px) {
-    .order-form{
-            margin-left: 35%;
-            margin-right: 35%;
-    }
     .footer-list{
         border-right: 1px solid white;
+    }
+}
+@media (max-width: 768px) {
+    .order-form{
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 200px;
+    }
+}
+@media (min-width: 768px) {
+    .order-form{
+        width: 350px;
     }
 }
 *{
@@ -46,7 +50,6 @@ body{
     border: grey;
     border-radius: 40px;
     background-color: rgb(33, 33, 33);
-    margin-left: 12%;
     width: 100px;
 }
 .submit1{
